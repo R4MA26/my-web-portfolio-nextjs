@@ -30,4 +30,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  /* .text-default-color {
+    color: black;
+  }
+  @screen dark {
+    .text-default-color {
+      color: white;
+    }
+  } */
 }
