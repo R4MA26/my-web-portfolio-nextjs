@@ -1,7 +1,10 @@
+"use client";
+import { AboutSection } from "./components/section/about-section";
+
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <h1 className="">Web Portfolio</h1>
+    <div className="min-h-screen px-8 py-10">
+      <AboutSection />
     </div>
   );
 }
