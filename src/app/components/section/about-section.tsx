@@ -1,21 +1,21 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export function AboutSection() {
   const text =
-    "Hello there, I’m a Mobile (Flutter) and WEB (React) dev based in indonesia, Makassar.".split(
-      " "
+    'Hello there, I’m a Mobile (Flutter) and WEB (React) dev based in indonesia, Makassar.'.split(
+      ' '
     );
   return (
-    <div className="flex h-fit items-center">
-      <div className="flex-1 flex justify-center">
+    <div className='flex h-fit items-center'>
+      <div className='flex flex-1 justify-center'>
         <img
-          src={"images/rama.jpg"}
-          alt={"alt"}
-          className="rounded-full object-cover border-2 border-gray-300 dark:border-none"
+          src={'images/rama.jpg'}
+          alt={'alt'}
+          className='rounded-full border-2 border-gray-300 object-cover dark:border-none'
           style={{ width: 400, height: 400 }}
         />
       </div>
-      <div className="flex-1 text-3xl tracking-widest leading-loose">
+      <div className='flex-1 text-3xl leading-loose tracking-widest'>
         {text.map((el, i) => (
           <motion.span
             initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ export function AboutSection() {
             }}
             key={i}
           >
-            {el}{" "}
+            {el}{' '}
           </motion.span>
         ))}
       </div>

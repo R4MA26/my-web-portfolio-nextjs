@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
@@ -15,10 +15,10 @@ const ThemeSwitcher = () => {
 
   return (
     <button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="p-2 rounded bg-gray-200 dark:bg-gray-800"
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      className='rounded bg-gray-200 p-2 dark:bg-gray-800'
     >
-      Switch to {theme === "light" ? "Dark" : "Light"} Mode
+      Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
     </button>
   );
 };
